@@ -6,7 +6,7 @@ struct Light {
 };
 
 // global list of lights
-const int N_LIGHTS = 4;
+const int N_LIGHTS = 6;
 Light pins[N_LIGHTS];
 
 int shouldBlink = LOW;
@@ -21,10 +21,12 @@ Light makeLight(int n) {
 
 void setup() {
   //randomSeed(analogRead(0));
-  pins[0] = makeLight(4);
-  pins[1] = makeLight(5);
-  pins[2] = makeLight(8);
-  pins[3] = makeLight(9);
+  pins[0] = makeLight(7);
+  pins[1] = makeLight(8);
+  pins[2] = makeLight(9);
+  pins[3] = makeLight(10);
+  pins[4] = makeLight(11);
+  pins[5] = makeLight(12);
 
   // pins
   pinMode(2, INPUT);  // push-button
